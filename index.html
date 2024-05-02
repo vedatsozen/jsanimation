@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT ANIMATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="container">
+    <img id="img" src="resim.png">
+    <h1 id="text">Javascript Animation</h1>
+    <h1 id="text2">Javascript Animation</h1>
+</div>
+
+
+<script>
+
+let container = document.getElementById("container");
+let img = document.getElementById("img");
+let text = document.getElementById("text");
+let text2 = document.getElementById("text2");
+
+container.addEventListener("mouseover", function() {
+img.classList.add("zoom");
+text.classList.add("slidetocenter");
+text2.classList.add("slidetocenter");
+})
+
+container.addEventListener("mouseleave", function() {
+img.classList.remove("zoom");
+text.classList.remove("slidetocenter");
+text2.classList.remove("slidetocenter");
+})
+
+</script>
+
+</body>
+</html>
